@@ -15,7 +15,9 @@ services:
     # command: npm run start:dev
     ports:
       - 3000:3000
+    networks:
+      - npmnetwork
 networks:
-  network1:
+  npmnetwork:
     name: npm-network
     external: true
