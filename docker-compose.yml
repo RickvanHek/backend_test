@@ -1,4 +1,5 @@
 services:
+  pull_policy: build
   api:
     build:
       dockerfile: Dockerfile
