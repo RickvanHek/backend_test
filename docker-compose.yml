@@ -1,5 +1,6 @@
 services:
   api:
+    container_name: backend
     pull_policy: build
     build:
       dockerfile: Dockerfile
@@ -14,3 +15,7 @@ services:
     # command: npm run start:dev
     ports:
       - 3000:3000
+networks:
+  network1:
+    name: npm-network
+    external: true
